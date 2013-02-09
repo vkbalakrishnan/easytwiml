@@ -1,16 +1,10 @@
 {
-    "name": "GitGrow - Data Share",
-    "description": "GG - Data Share",
+    "name": "EasyTwiML",
+    "description": "Easily create TwiML files for Twilio Outbound calls",
     "version": "0.0.1",
-    "private": true,
     "dependencies": {
         "express": "3.x",
-        "request": "2.x",
         "log4js" : "0.5.6",
-        "moment" : "1.7.x",
-        "vows"   : "0.7.0",
-        "twilio" : "0.7.1",
-        "sendgrid":"0.2.5",
         "js2xmlparser": "0.1.0"
     },
     "engines": {

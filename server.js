@@ -32,7 +32,7 @@ app.get('/', function(req, res){
   res.sendfile(__dirname + '/index.html');
 });
 
-
+app.get('/xml', services.getXML);
 app.post('/xml', services.getXML);
 
 

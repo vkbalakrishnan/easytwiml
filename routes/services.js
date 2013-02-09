@@ -16,7 +16,7 @@ exports.getXML = function(req,res){
  		data = {
 			"Say": query.text
 		}
-	} else if(query.hasOwnProperty( 'json' ) && query.json != undefined && query.voice == 'woman' ){
+	} else if(query.hasOwnProperty( 'json' ) && query.json != undefined ){
  		data = JSON.parse(query.json);
 	}
 	var callxml = js2xmlparser("Response", data);
