@@ -1,8 +1,17 @@
 <html>
 	<head>
-		<title>Your Ex's are a bit busy now!</title>
+		<title>Easy TwiML Generator!</title>
 	</head>
 	<body>
-		<h2>Atleast the server is working.</h2>
+		<h2>Generate TwiML's on the fly.</h2>
+		<p>Options</p>
+		<ul>
+			<li>text : (Text) What the call should say. eg:<a href="http://vkb.me/easytwiml/xml/?text=welcome%20to%20twilio">http://vkb.me/easytwiml/xml/?text=welcome%20to%20twilio</a></li>
+			<li>voice : By default "Man" voice is used. Otherwise set voice as "Woman". Should be used with 'text' parameter. eg:<a href="http://vkb.me/easytwiml/xml/?text=welcome%20to%20twilio&&voice=woman">http://vkb.me/easytwiml/xml/?text=welcome%20to%20twilio</a></li>
+			<li>json : For complex TwiMLs. </li>
+		</ul>
+		<h3>JSON Example</h3>
+		<p>eg:<a href="http://vkb.me/easytwiml/xml/?json={"Say" : "welcome to twilio","Record":{"@":{"maxLength":20}}}">http://vkb.me/easytwiml/xml/?json={"Say" : "welcome to twilio","Record":{"@":{"maxLength":20}}}</a></p>
+		<p>For more details on json formatting refer <a href="https://github.com/michaelkourlas/node-js2xmlparser#example"> JS2XMLParser Github Page</a></p>
 	</body>
 </html>
